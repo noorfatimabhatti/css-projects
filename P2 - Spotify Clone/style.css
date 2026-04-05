@@ -1,0 +1,267 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: black;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 500;
+    display: flex;
+}
+.sidebar {
+    background-color:#121212;
+    height: 100vh;
+    width: 280px;
+    position: fixed;
+}
+
+.sideheader {
+    background-color: #1f1f1f;
+    height: 90px;
+    width: 260px;
+    margin: 10px 0px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.sideheader .icons-1{
+    margin: 0.2rem 1rem 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.sideheader .icons-2{
+    margin: 0.2rem 1rem 0.5rem 1rem;
+    font-weight: 600;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.sideheader .icons-2:hover{
+    opacity: 1;
+}
+.sideheader .icons-1  i{
+    margin-right: 1rem;
+
+}
+.sideheader .icons-2  i{
+    margin-right: 1rem;
+
+}
+.sidebody{
+    background-color: #121212;
+    width: 260px;
+    height: 800px;
+    margin: 10px 0px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+.library{
+    margin: 1rem 1rem 0.5rem 1rem;
+
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.library img{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+.leftgroup{
+    opacity: 0.5;
+}
+
+
+.library .leftgroup:hover{
+    opacity: 1;
+}
+.rightgroup i{
+    margin-left: 0.8rem;
+    opacity: 0.5;
+    
+}
+.rightgroup i:hover{
+    opacity: 1;
+}
+
+.sidedownbody1{
+    background-color: #1f1f1f;
+    width: 260px;
+    height: 135px;
+    margin: 10px 0px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    border-radius: 0.5rem;
+}
+.sidedownbody1 h3{
+    font-size: medium;
+    margin-left: 1rem;
+}
+.sidedownbody1 p{
+    font-weight: 400;
+    font-size: small;
+    margin-left: 1rem;
+    margin-top: -6px;
+}
+ .button{
+    width: 140px;
+    background-color: white;
+    color: black;
+    border-radius: 16px;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+.mainbody{
+    padding-top: 60px;
+    background-color:#212121;
+}
+.maincontent{
+   flex: 1;
+   border-radius: 1rem;
+   margin-left: 280px;
+    background-color:#212121;
+    height: 100vh;
+
+}
+.stickybar{
+
+    height: 50px;
+    background-color: #212121;
+    position: fixed;
+    left: 280px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.stickybar .leftside img{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    padding: 1rem 0rem 1rem 0rem;
+}
+.stickybar .rightside .button{
+    width: 120px;
+    margin: 0.5rem 0rem 1rem 0rem;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 180px;
+    height: 350px;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+.card img{
+   width: 100%; 
+}
+.card h4{
+    margin-bottom: -0.5rem;
+}
+.card p{
+    font-size: small;
+    opacity: 0.8;
+}
+.barline{
+    background-color: white;
+    flex: 1;
+    height: 1px;
+}
+.playbar{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 1px;
+    background-color: #121212;
+    display: flex;
+}
+.playbar-1{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+}
+.playbar-1 img{
+    width: 56px;
+    height: 56px;
+}
+.song-info-2{
+    display: flex;
+    flex-direction: column;
+}
+.song-info-2 p{
+    font-size: small;
+    margin: 0.2rem 0rem 0rem 1rem;
+}
+.icons{
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+}
+.playbar-2{
+    flex: 1;
+    height: 60px;
+}
+.playbar-icons{
+    display: flex;
+    justify-content: center;
+}
+.playbar-icons img{
+    width: 1rem;
+    height: 1rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.playbar-2 .track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+.track input{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 270px;
+    height: 4px;
+    background-color: #535353;
+    border-radius: 5px;
+}
+
+.track input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.track input:hover::-webkit-slider-thumb{
+    opacity: 1;
+}
+.playbar-3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    flex: 1;
+}
+.playbar-3 i{
+    height: 1rem;
+    width: 1rem;
+    color: white;
+    margin-right: 1rem;
+
+}
+.playbar-3 .track input{
+    width: 90px;
+    background-color: white;
+    margin-right: 1rem;
+}
